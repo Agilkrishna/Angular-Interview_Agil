@@ -13,5 +13,16 @@
   Meaning the children should have the input and the button and the parent will be responsible for displaying the data when the button is clicked.
 </pre>
 <!--Do Not touch the code above this line!-->
-<hr/>
-<span>YOUR CODE HERE!</span>
+<hr />
+
+<div>
+  <p><b>Parent To Child - Child To Parent</b></p>
+
+  <div>
+    <span>Parent to Child </span>
+    <input type="textbox" [(ngModel)]="master" />
+  </div>
+  <br />
+  <app-child [childToParent]="master" (childToParent)="childToParent($event)">
+  </app-child>
+</div>

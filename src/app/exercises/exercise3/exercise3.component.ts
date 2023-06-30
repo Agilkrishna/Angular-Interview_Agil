@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./exercise3.component.css']
 })
 export class Exercise3Component {
+  
 
 }

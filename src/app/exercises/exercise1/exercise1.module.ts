@@ -1,20 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Exercise1Component } from './exercise1.component';
-import {RouterModule} from "@angular/router";
-
-
+import { RouterModule } from '@angular/router';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [
-    Exercise1Component
-  ],
+  declarations: [Exercise1Component],
   imports: [
     CommonModule,
-    RouterModule.forChild([{
-      path: '',
-      component: Exercise1Component
-    }])
-  ]
+    FormsModule,
+    ReactiveFormsModule,
+    RouterModule.forChild([
+      {
+        path: '',
+        component: Exercise1Component,
+      },
+    ]),
+  ],
 })
-export class Exercise1Module { }
+export class Exercise1Module {}
