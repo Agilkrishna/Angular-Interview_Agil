@@ -7,7 +7,17 @@ import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    RouterModule.forRoot([
+      {
+        path: 'exercises',
+        loadChildren: () =>
+          import('./exercises/exercises.module').then((m) => m.ExercisesModule),
+      },
+    ]),
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

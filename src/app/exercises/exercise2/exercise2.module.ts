@@ -6,20 +6,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
 import { AppChildComponent } from './app-child.component';
-import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [Exercise2Component, AppChildComponent],
-  imports: [
-    CommonModule,
-    
-    FormsModule,
-    RouterModule.forChild([
-      {
-        path: '',
-        component: Exercise2Component,
-      },
-    ]),
-  ],
+  imports: [CommonModule, BrowserModule, FormsModule],
+  bootstrap: [Exercise2Component],
 })
 export class Exercise2Module {}

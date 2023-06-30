@@ -13,24 +13,30 @@ import { Exercise4Module } from './exercise4/exercise4.module';
   declarations: [],
   imports: [
     CommonModule,
-    // Exercise1Module,
-    // Exercise4Module,
-    // RouterModule.forChild([{
-    //   path: '1',
-    //   component: Exercise1Component,
-    // },{
-    //   path: '2',
-    //   component: Exercise2Component,
-    // },{
-    //   path: '3',
-    //   component: Exercise3Component,
-    // },{
-    //   path: '4',
-    //   component: Exercise4Component,
-    // }, {
-    //   path: '**',
-    //   component: ExerciseNotFoundComponent
-    // }])
+    Exercise1Module,
+    Exercise4Module,
+    RouterModule.forChild([
+      {
+        path: '1',
+        component: Exercise1Component,
+      },
+      {
+        path: '2',
+        component: Exercise2Component,
+      },
+      {
+        path: '3',
+        component: Exercise3Component,
+      },
+      {
+        path: '4',
+        component: Exercise4Component,
+      },
+      {
+        path: '**',
+        component: ExerciseNotFoundComponent,
+      },
+    ]),
   ],
 })
 export class ExercisesModule {}
