@@ -10,13 +10,7 @@ import { RouterModule } from '@angular/router';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot([
-      {
-        path: 'exercises',
-        loadChildren: () =>
-          import('./exercises/exercises.module').then((m) => m.ExercisesModule),
-      },
-    ]),
+    
   ],
   providers: [],
   bootstrap: [AppComponent],

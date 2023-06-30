@@ -5,6 +5,13 @@ import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [ExerciseNotFoundComponent],
-  imports: [CommonModule],
+  imports: [CommonModule,
+    
+    RouterModule.forChild([
+      {
+        path: '',
+        component: ExerciseNotFoundComponent,
+      },
+    ]),],
 })
 export class ExerciseNotFoundModule {}
