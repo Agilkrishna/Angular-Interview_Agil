@@ -39,7 +39,7 @@ const routes: Routes = [
   },
 
   {
-    path: 'exercise/*',
+    path: 'exercise/99',
 
     loadChildren: () =>
       import('./exercises/exerciseNotFound/exerciseNotFound.module').then(
